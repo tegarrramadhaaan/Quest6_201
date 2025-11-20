@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Form pendaftaran</string>
+    <string name="laki">laki-laki</string>
+    <string name="wanita">perempuan</string>
+    <string name="submit">submit</string>
+    <string name="back">back</string>
+    <string name="nama">Nama lengkap  </string>
+    <string name="alamat">Alamat</string>
+    <string name="gender">Jenis Kelamin</string>
+    <string name="detail">Data Siswa</string>
+
+</resources>
