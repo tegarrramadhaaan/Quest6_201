@@ -43,3 +43,25 @@ fun TampilSiswa(
         }
     ) { paddingValues ->
 
+        Column(
+            modifier = Modifier
+                .padding(paddingValues)
+                .padding(dimensionResource(id = R.dimen.padding_medium)),
+            verticalArrangement = Arrangement.spacedBy(dimensionResource(id = R.dimen.padding_small))
+        ) {
+
+            items.forEach { item ->
+                Column {
+                    Text(
+                        text = item.first.uppercase(),
+                        fontSize = 16.sp
+                    )
+                    Text(
+                        text = item.second,
+                        fontSize = 16.sp,
+                        fontWeight = FontWeight.Bold
+                    )
+                    Divider(thickness = dimensionResource(id = R.dimen.thickness_divider))
+                }
+            }
+
