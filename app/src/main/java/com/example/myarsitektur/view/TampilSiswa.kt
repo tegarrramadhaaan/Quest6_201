@@ -22,9 +22,24 @@ fun TampilSiswa(
     onBackButtonClicked: () -> Unit
 ) {
     val items = listOf(
-        Pair(stringResource(id = R.string.nama), statusUiSiswa.nama),
+        Pair(stringResource(id = R.string.nama ), statusUiSiswa.nama),
         Pair(stringResource(id = R.string.gender), statusUiSiswa.gender),
         Pair(stringResource(id = R.string.alamat), statusUiSiswa.alamat)
     )
 
-}
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = {
+                    Text(
+                        text = stringResource(id = R.string.detail),
+                        color = Color.White
+                    )
+                },
+                colors = TopAppBarDefaults.mediumTopAppBarColors(
+                    containerColor = colorResource(id = R.color.purple_500)
+                )
+            )
+        }
+    ) { paddingValues ->
+
