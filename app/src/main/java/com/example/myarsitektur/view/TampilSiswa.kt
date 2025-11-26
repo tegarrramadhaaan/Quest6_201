@@ -67,4 +67,12 @@ fun TampilSiswa(
 
             Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.padding_small)))
 
-
+            Button(
+                modifier = Modifier.fillMaxWidth(),
+                onClick = onBackButtonClicked
+            ) {
+                Text(text = stringResource(id = R.string.back))
+            }
+        }
+    }
+}
